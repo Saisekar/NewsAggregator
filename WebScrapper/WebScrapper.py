@@ -11,9 +11,9 @@ import io
 #MoneyControl
 from docutils.nodes import line
 
-MC_page = requests.get("http://www.moneycontrol.com/news/business/stocks/page-1/")
+MC_page = requests.get(<url>)
 #Economic Times
-ET_page = requests.get("http://economictimes.indiatimes.com/markets/stocks/news")
+ET_page = requests.get(<url>)
 
 soup_MC = BeautifulSoup(MC_page.content, 'html.parser')
 soup_ET = BeautifulSoup(ET_page.content, 'html.parser')
